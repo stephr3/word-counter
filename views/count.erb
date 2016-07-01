@@ -11,31 +11,31 @@
 </p>
 <a href="/"><button type="button" class="btn center-block">Try Again Ah Ah</button></a>
 <script type="text/javascript">
-   var num = <%=@count%>;
-   var countImages = [
-     "img/count-0.jpg",
-     "img/count-1.jpg",
-     "img/count-2.jpg",
-     "img/count-3.jpg",
-     "img/count-4.jpg",
-     "img/count-5.jpg",
-     "img/count-6.jpg",
-     "img/count-7.jpg",
-     "img/count-8.jpg",
-     "img/count-9.jpg"
-   ]
-   $(function(){
-     if (num < 10) {
-       for (i=0; i<10; i++) {
-         if (num === i) {
-           $('#add-img').append('<img src=' + countImages[i] + '>')
-         }
+  var num = <%=@count%>;
+  var countImages = [
+  "img/count-0.jpg",
+  "img/count-1.jpg",
+  "img/count-2.jpg",
+  "img/count-3.jpg",
+  "img/count-4.jpg",
+  "img/count-5.jpg",
+  "img/count-6.jpg",
+  "img/count-7.jpg",
+  "img/count-8.jpg",
+  "img/count-9.jpg"
+  ]
+  $(function(){
+    if (num < 10) {
+     for (i=0; i<10; i++) {
+       if (num === i) {
+         $('#add-img').append('<img src=' + countImages[i] + '>')
        }
-     } else {
-       $('#add-img').append('<img src="img/count-main.jpg">')
      }
-     if (num === 1) {
-       $('#time').text('time')
-     }
+    } else {
+     $('#add-img').append('<img src="img/count-main.jpg">')
+    }
+    if (num === 1) {
+     $('#time').text('time')
+    }
   })
 </script>
