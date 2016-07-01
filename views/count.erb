@@ -6,4 +6,9 @@
 <p>
   Your word occurs <span class="result-word"><%= @count %></span> times in the text.
 </p>
-<a href="/"><button type="button" class="btn">Try Again Ah Ah</button></a>
+<a href="/"><button type="button" class="btn center-block">Try Again Ah Ah</button></a>
+<script type="text/javascript">
+   var target_word = '<%= @target_word %>';
+   var user_text = '<%= @user_text %>'; 
+   add_color_class(target_word, user_text)
+</script>

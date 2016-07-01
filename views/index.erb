@@ -1,14 +1,14 @@
 <h1>Word Counter</h1>
 <img src="img/count-main.jpg" alt="Count von Count from Sesame Street" />
 <p>Enter your target word and text below to count how many times your word appears in the text.</p>
-<form action='/count'>
+<form action='/count' id="user_input">
   <div class="form-group">
     <label for="target_word">Write your target word here:</label>
     <input type="text" name="target_word" class="form-control">
   </div>
   <div class="form-group">
     <label for="user_text">Input your text here:</label>
-    <textarea rows="8" name="user_text" class="form-control"></textarea>
+    <textarea rows="5" name="user_text" class="form-control"></textarea>
   </div>
   <button type="submit" id="count_words" class="btn center-block">Count Words Ah Ah</button>
 </form>
