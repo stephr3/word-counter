@@ -17,9 +17,9 @@ describe('String#count_words_in') do
   it('can handle multiple occurrences of a word within a string of words') do
     expect('pet'.count_words_in('pet a pet dog in the pet store')).to(eq(3))
   end
-  # it('can handle capitalized user entries') do
-  #   expect('pet'.count_words_in('Pet a pet dog in the Pet Store')).to(eq(3))
-  # end
+  it('can handle capitalized user entries') do
+    expect('pet'.count_words_in('Pet a pet dog in the Pet Store')).to(eq(3))
+  end
   # it('can handle mixed case user entries') do
   #   expect('pet'.count_words_in('Pet a PET dOg in the pEt STOre')).to(eq(3))
   # end
