@@ -6,7 +6,7 @@ class String
     target_word = self.downcase()
     string_of_words_array = string_of_words.split()
     string_of_words_array.each() do |string_word|
-      if target_word.==(string_word.downcase())
+      if target_word.==(string_word.downcase().gsub(/\W/,''))
         count = count.+(1)
       end
     end
