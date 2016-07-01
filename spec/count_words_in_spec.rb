@@ -29,4 +29,7 @@ describe('String#count_words_in') do
   it('can handle user word string with punctuation') do
     expect('pet'.count_words_in('Pet the pet!')).to(eq(2))
   end
+  it('can handle user word with punctuation') do
+    expect('pet!'.count_words_in('Pet the pet!')).to(eq(2))
+  end
 end
