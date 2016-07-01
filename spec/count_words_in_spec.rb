@@ -23,9 +23,9 @@ describe('String#count_words_in') do
   it('can handle mixed case user entries') do
     expect('pet'.count_words_in('Pet a PET dOg in the pEt STOre')).to(eq(3))
   end
-  # it('can handle user entries with numbers') do
-  #   expect('pet'.count_words_in('Pet 2 pet dogs in the pet store')).to(eq(3))
-  # end
+  it('can handle user entries with numbers') do
+    expect('pet'.count_words_in('Pet 2 pet dogs in the pet store')).to(eq(3))
+  end
   # it('can handle user entries with punctuation') do
   #   expect('pet'.count_words_in('Pet 2 pet dogs in the pet store!!!')).to(eq(3))
   # end
