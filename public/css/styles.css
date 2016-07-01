@@ -3,6 +3,10 @@ body {
   font-family:'Inconsolata';
 }
 
+a {
+  color: black;
+}
+
 h1 {
   font: 3em 'PT mono';
   text-align: center;
@@ -25,6 +29,7 @@ p {
 }
 
 ul {
+  font-size: 1.2em;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -46,5 +51,6 @@ ul {
 
 /*Count Page Styles*/
 .result-word {
-  color: red;
+  color: #DDB6F2;
+  font-size: 1.2em;
 }
