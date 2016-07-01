@@ -1,4 +1,7 @@
 <h1>Results</h1>
+<div id="add-img">
+
+</div>
 <ul>
   <li>Your Word: <span class="result-word"><%= @target_word %></span></li>
   <li>Your Text: <%= @user_text %></li>
@@ -8,7 +11,32 @@
 </p>
 <a href="/"><button type="button" class="btn center-block">Try Again Ah Ah</button></a>
 <script type="text/javascript">
-   var target_word = '<%= @target_word %>';
-   var user_text = '<%= @user_text %>'; 
-   add_color_class(target_word, user_text)
+   var num = <%=@count%>;
+debugger;
+   $(function(){
+     alert('jquery is working')
+     if (num === 0) {
+       $('#add-img').append('<img src="img/count-0.jpg">')
+     }else if (num === 1) {
+       $('#add-img').append('<img src="img/count-1.jpg">')
+     } else if (num === 2){
+       $('#add-img').append('<img src="img/count-2.jpg">')
+     } else if (num === 3){
+       $('#add-img').append('<img src="img/count-3.jpg">')
+     } else if (num === 4){
+       $('#add-img').append('<img src="img/count-4.jpg">')
+     } else if (num === 5){
+       $('#add-img').append('<img src="img/count-5.jpg">')
+     } else if (num === 6){
+       $('#add-img').append('<img src="img/count-6.jpg">')
+     } else if (num === 7){
+       $('#add-img').append('<img src="img/count-7.jpg">')
+     } else if (num === 8){
+       $('#add-img').append('<img src="img/count-8.jpg">')
+     } else if (num === 9){
+       $('#add-img').append('<img src="img/count-9.jpg">')
+     } else {
+       $('#add-img').append('<img src="img/count-main.jpg">')
+     }
+ })
 </script>
