@@ -1,4 +1,4 @@
-# Word Counter
+# Count von Wordcount
 
 ##### _An app that takes a user's word and text, then counts how many times the word occurs in the text. Brought to you by the number 7 and Count von Count. Created July 1, 2016._
 
@@ -14,7 +14,7 @@ This application will take a word that the user inputs, as well as a text of any
 * Run bundle install in your project directory to ensure all gems are installed.
 * Run ruby app.rb in your project directory to start Sinatra
 * Open a browser of your choice to localhost:4567
-* You can also check out the page here: <http://heroku.org>
+* You can also check out the page here: <https://count-von-wordcount.herokuapp.com/>
 
 ## Technologies Used
 
