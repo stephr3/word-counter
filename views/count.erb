@@ -7,7 +7,7 @@
   <li>Your Text: <%= @user_text %></li>
 </ul>
 <p>
-  Your word occurs <span class="result-word"><%= @count %></span> times in the text.
+  Your word occurs <span class="result-word"><%= @count %></span> <span id="time">times</span> in the text.
 </p>
 <a href="/"><button type="button" class="btn center-block">Try Again Ah Ah</button></a>
 <script type="text/javascript">
@@ -33,6 +33,9 @@
        }
      } else {
        $('#add-img').append('<img src="img/count-main.jpg">')
+     }
+     if (num === 1) {
+       $('#time').text('time')
      }
   })
 </script>
