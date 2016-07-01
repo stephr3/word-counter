@@ -5,9 +5,9 @@ describe('String#count_words_in') do
   it('returns 0 when two single words are compared and the words are not the same') do
     expect('pet'.count_words_in('dog')).to(eq(0))
   end
-  # it('returns 1 when two single words are compared and the words are the same') do
-  #   expect('pet'.count_words_in('pet')).to(eq(1))
-  # end
+  it('returns 1 when two single words are compared and the words are the same') do
+    expect('pet'.count_words_in('pet')).to(eq(1))
+  end
   # it('returns 0 when a word is compared with a string of words and the target word is not included in the string of words') do
   #   expect('pet'.count_words_in('dog store')).to(eq(0))
   # end
