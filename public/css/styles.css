@@ -1,9 +1,50 @@
+/*General Styles*/
+body {
+  font-family:'Inconsolata';
+}
+
+h1 {
+  font: 3em 'PT mono';
+  text-align: center;
+}
+
+img {
+  border: 4px solid black;
+  display:block;
+  margin: 2% auto;
+  width: 50%;
+}
+
+label {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1.3em;
+  padding: 2% 0;
+}
+
 ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 
+.btn {
+  background-color: #DDB6F2;
+  border: 2px solid gray;
+  font-color: gray;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.btn:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+/*Count Page Styles*/
 .result-word {
   color: red;
 }
